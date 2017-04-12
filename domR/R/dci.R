@@ -1,0 +1,29 @@
+#' Get the directional consistency index (DCI) of a sociomatrix.
+#'
+#' @param m A matrix with individuals ordered identically in rows and columns.
+#' @return The directional consistency of \code{m}.
+#' @examples
+#' dci(bonobos)
+#' @section References:
+#' Van Hooff JARAM, Wensing JAB. 1987.
+#' Dominance and its behavioural measures in a captive wolf pack.
+#' In: Frank HW, editor. Man and Wolf.
+#' Dordrecht, Olanda (Netherlands): Junk Publishers
+#' pp.219-252.
+#' @section Further details:
+#' The DCI represents the proportion of occurrences of a behavior
+#' that occurs across all dyads in a group from the individual
+#' within each dyad performing the behavior with a higher frequency (H)
+#' to the individual within each dyad performing the behavior with
+#' a lower frequency (L). It is calculated by averaging the following
+#' formula across all dyads: DCI = (H - L)/(H + L). The DCI ranges from 0
+#' (no directional asymmetry) to 1 (completely unidirectional).
+#' @export
+
+dci<-function(m){
+  m<-as.matrix(m)
+  diag(m)<-0
+  N=sum(m)/2
+  dc=sum(abs(m-t(m)))/2/sum(m)
+ return(dc)
+ }

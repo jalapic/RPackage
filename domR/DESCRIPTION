@@ -1,0 +1,21 @@
+Package: domR
+Title: Analyzing Social Hierarchies
+Type: Package
+Version: 0.1
+Author: c(person("James P.", "Curley", role = c("aut", "cre"),
+    email = "jc3181@columbia.edu")
+Maintainer: James P. Curley <jc3181@columbia.edu>
+Description: Organizing and Analyzing Social Dominance
+    Hierarchy Data.
+Depends:
+    R (>= 3.1.0)
+License: GPL-3
+LazyData: true
+Imports:
+    igraph
+URL: https://github.com/jalapic/compete
+BugReports: https://github.com/jalapic/compete
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
