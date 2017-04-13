@@ -2,7 +2,7 @@
 
 
 ### Calculates Triangle Transitivity Index
-ttri=function(m){
+ttri <- function(m){
 mat <- get_di_matrix(as.matrix(m))
 diag(mat)=0
 g = igraph::graph.adjacency(mat, mode="directed", diag=FALSE)
