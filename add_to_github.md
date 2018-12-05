@@ -78,7 +78,9 @@ If you make changes to your project and wish to add them........
 type:
 
 git add -A
+
 git commit   [then add a message and quit the viewer using  Esc :wq Enter]
+
 git push
 
 Check online - the changes should be there.
