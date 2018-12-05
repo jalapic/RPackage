@@ -65,6 +65,7 @@ Esc  :wq Enter   (this is to quit the commit message).
 Now type:
 
 git remote add origin https://github.com/yourusername/PackageName.git
+
 git push -u origin master
 
 3. Now check online to see if your package is there in your repository.
