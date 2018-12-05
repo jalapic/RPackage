@@ -46,3 +46,65 @@ There are different ways of doing this. You may find some don't work - in which 
 
 
 
+
+### If you don't see a git tab in your package.....
+
+Make sure you have an empty repository on GitHub that is of the same name as your package.
+
+1. Open the shell from RStudio/tools.
+2. to set up git, type the following in order...
+
+git init
+git add -A
+git commit
+
+[now you have to try and write a commit message.  After you manage to do that, press...]
+
+Esc  :wq Enter   (this is to quit the commit message).
+
+Now type:
+
+git remote add origin https://github.com/yourusername/PackageName.git
+git push -u origin master
+
+3. Now check online to see if your package is there in your repository.
+
+
+If you make changes to your project and wish to add them........
+
+4. Open the shell using RStudio/tools
+
+type:
+
+git add -A
+git commit   [then add a message and quit the viewer using  Esc :wq Enter]
+git push
+
+Check online - the changes should be there.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
