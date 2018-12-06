@@ -61,13 +61,19 @@ git commit
 [now you have to try and write a commit message.  After you manage to do that, press...]
 
 do this by typing the following: 
+
 I
+
 <message>
+
 Enter
+
 
 now type 
 
+
 Esc  :wq Enter   (this is to quit the commit message).
+
 
 Now type:
 
